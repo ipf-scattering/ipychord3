@@ -1,0 +1,10 @@
+*~
+*.pyc
+*.pyd
+*.so
+*.o
+*.whl
+.cache/
+.idea/
+build/
+

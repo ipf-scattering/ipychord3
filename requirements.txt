@@ -1,0 +1,7 @@
+matplotlib
+numpy
+scipy
+h5py
+fabio
+scikit-image
+sphinx-rtd-theme
