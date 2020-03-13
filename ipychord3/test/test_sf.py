@@ -51,11 +51,11 @@ class TestExtendImage:
                        [21, 22, 23],
                        [31, 32, 33]])
 
-        desired = np.array([[11, 12, 13, 0, 0], 
-                            [21, 22, 23, 0, 0],
-                            [31, 32, 33, 0, 0]])
+        desired = np.array([[0, 0, 11, 12, 13], 
+                            [0, 0, 21, 22, 23],
+                            [0, 0, 31, 32, 33]])
         
-        ext = sf.extend_image({'map': ar}, (2,1))
+        ext = sf.extend_image({'map': ar}, (0,1))
         testing.assert_array_equal(desired, ext['map'])
 
     def test_off_by_one_h_top(self):
