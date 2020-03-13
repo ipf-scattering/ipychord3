@@ -14,7 +14,7 @@ setup(
                       'numpy',
                       'scipy',
                       'matplotlib',
-                      'skimage',
+                      'scikit-image',
                       'h5py',
                       'fabio'
                      ]
