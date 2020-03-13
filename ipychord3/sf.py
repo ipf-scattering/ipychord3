@@ -685,7 +685,7 @@ def midpnt(img):
 
 
 def extend_image(img, center):
-    """extend the pattern such that the midpoint is the center of  the image
+    """extend the pattern such that the midpoint is the center of the image
 
     the shape of the extended image is always odd
 
