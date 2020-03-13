@@ -459,6 +459,7 @@ def rotate_pattern(img, fig={}, angle=None):
 
     if angle is not None:
         img['map'] = ndimage.rotate(img['map'], angle, mode='constant', cval=0.0)
+        img['beam_position'] = midpnt(img)
     else:
         if isinstance(fig, dict):
             logger.debug('creating figure')
@@ -1946,6 +1947,7 @@ class RotatePattern(InteractBase):
         """rotate the image and show it"""
         self._angle += angle
         self._rotated_img['map'] = ndimage.rotate(self._img['map'], self._angle, mode='constant', cval=0.0)
+        self._rotated_img['beam_position'] = midpnt(self._rotated_img)
         img, ulev, dlev = prepare_patter_for_show(self._rotated_img, **self.fig._sf_kwargs_for_prepare)
         self._image_axes.set_data(img['map'])
         self._image_axes.set_clim(vmin=dlev, vmax=ulev)
