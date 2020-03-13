@@ -14,6 +14,7 @@ Contents:
    io.rst
    sf.rst
    special_io.rst
+   utils.rst
 
 Indices and tables
 ==================

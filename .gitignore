@@ -7,4 +7,5 @@
 .cache/
 .idea/
 build/
-
+doc/_build/
+.vscode/
