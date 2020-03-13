@@ -29,7 +29,7 @@ from ipychord3 import io
 
 class TestFIOreader:
     @staticmethod
-    @pytest.fixture(scope="class")
+    # @pytest.fixture(scope="class")  ## deprecated, see https://docs.pytest.org/en/latest/deprecations.html#calling-fixtures-directly
     def getData():
         dataFile = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 'data', 'test.fio')
