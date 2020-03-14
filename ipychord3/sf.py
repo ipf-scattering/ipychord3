@@ -233,7 +233,12 @@ def show(img, ulev=None, dlev=None, log=0, med=None, win=None, block=False, show
     ax.set_aspect('equal')
     ax.set_axis_off()
 
-    fig.canvas.set_window_title(img['filename']+'_sf_show')
+    if 'filename' in img:
+        fig.canvas.set_window_title(img['filename']+'_sf_show')
+    elif 'title' in img:
+        fig.canvas.set_window_title(img['title'])
+    else:
+       fig.canvas.set_window_title('sf.show pattern') 
 
     fig._sf_kwargs_for_prepare = kwargs_for_prepare
     if not show:
