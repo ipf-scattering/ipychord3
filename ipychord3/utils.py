@@ -307,10 +307,10 @@ class TestPattern:
 
         self.map += np.asarray(np.round(
                         gaussian2d_polar(self._X_centered, self._Y_centered,
-                                         A, sigma, (r,  np.pi/2 + rot_rad))), dtype=np.int32)
+                                         A, sigma, (r,  np.pi/2 - rot_rad))), dtype=np.int32)
         self.map += np.asarray(np.round(
                         gaussian2d_polar(self._X_centered, self._Y_centered,
-                                         A, sigma, (r, -np.pi/2 + rot_rad))), dtype=np.int32)
+                                         A, sigma, (r, -np.pi/2 - rot_rad))), dtype=np.int32)
         
     def add_reflex_2(self, A=750, sigma=(6, 8), x0=(260, -20)):
         """``x_0 = (r0, phi0)``"""
@@ -323,13 +323,13 @@ class TestPattern:
         
         self.map += np.asarray(np.round(
                         gaussian2d_polar(self._X_centered, self._Y_centered,
-                                         A, sigma, (r,  (np.pi/2 + angle) + rot_rad))), dtype=np.int32)
+                                         A, sigma, (r,  (np.pi/2 + angle) - rot_rad))), dtype=np.int32)
         self.map += np.asarray(np.round(
                         gaussian2d_polar(self._X_centered, self._Y_centered,
-                                         A, sigma, (r, -(np.pi/2 + angle) + rot_rad))), dtype=np.int32)
+                                         A, sigma, (r, -(np.pi/2 + angle) - rot_rad))), dtype=np.int32)
         self.map += np.asarray(np.round(
                         gaussian2d_polar(self._X_centered, self._Y_centered,
-                                         A, sigma, (r,  (np.pi/2 - angle) + rot_rad))), dtype=np.int32)
+                                         A, sigma, (r,  (np.pi/2 - angle) - rot_rad))), dtype=np.int32)
         self.map += np.asarray(np.round(
                         gaussian2d_polar(self._X_centered, self._Y_centered,
-                                         A, sigma, (r, -(np.pi/2 - angle) + rot_rad))), dtype=np.int32)
+                                         A, sigma, (r, -(np.pi/2 - angle) - rot_rad))), dtype=np.int32)
