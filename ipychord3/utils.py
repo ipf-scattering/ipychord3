@@ -247,7 +247,6 @@ class TestPattern:
     def make_pattern(self, rot=0):
         """Return a rotated pattern
 
-        Parameters:
         :param rot: rotation of the reflexes in degrees, counterclockwise is positive
 
         :return: the pattern dict
