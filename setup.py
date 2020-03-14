@@ -23,6 +23,7 @@ setup(
         'Source': 'https://github.com/ipf-scattering/ipychord3/',
         'Tracker': 'https://github.com/ipf-scattering/ipychord3/issues',
     },
+    python_requires='~=3.5',
     install_requires=[
                       'numpy',
                       'scipy',
