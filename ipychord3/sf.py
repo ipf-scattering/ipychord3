@@ -168,7 +168,7 @@ def prepare_patter_for_show(img, ulev=None, dlev=None, log=0, med=None,
 
 
 def show(img, ulev=None, dlev=None, log=0, med=None, win=None, block=False, show=True,
-         cmap=cmaps.lut05(), over=None, neg=False, mag=False, clip=True, scalefig=1.2):
+         cmap='viridis', over=None, neg=False, mag=False, clip=True, scalefig=1.2):
     """ show the image under different conditions
 
     .. note::  This function can not show the positive and negative value
