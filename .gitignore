@@ -9,3 +9,5 @@
 build/
 doc/_build/
 .vscode/
+.coverage
+htmlcov/
