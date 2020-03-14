@@ -10,6 +10,19 @@ setup(
     packages=['ipychord3'],
     platforms='any',
     license='MIT',
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+    ],
+    project_urls={
+        'Documentation': 'https://ipychord3.readthedocs.io/',
+        'Source': 'https://github.com/ipf-scattering/ipychord3/',
+        'Tracker': 'https://github.com/ipf-scattering/ipychord3/issues',
+    },
     install_requires=[
                       'numpy',
                       'scipy',
