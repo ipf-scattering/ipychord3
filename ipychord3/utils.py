@@ -96,7 +96,7 @@ def sortedScanPaths(path_glob):
 ####---------------------------------------------------------------------------
 ## Data selection and modification
 
-def indices_below(a, val, extend_window=0, extend_dir='-'):
+def indices_below(a, val, extend_window: int=0, extend_dir='-'):
     """Get array of bools where ``a<val`` and extend the indices 
     by ``extend_window``.
     
@@ -124,7 +124,7 @@ def indices_below(a, val, extend_window=0, extend_dir='-'):
     return idx
 
 
-def indices_above(a, val, extend_window=0, extend_dir='+'):
+def indices_above(a, val, extend_window: int=0, extend_dir='+'):
     """Get array of bools where ``a>=val`` and extend the indices 
     by ``extend_window``.
     
@@ -146,7 +146,7 @@ def indices_above(a, val, extend_window=0, extend_dir='+'):
     return idx
 
 
-def remove_around(a, index, extend):
+def remove_around(a, index: int, extend: int):
     """Get array of bools like ``a`` where indices around ``index``
     are ``False`` and extended by ``extend``
     
